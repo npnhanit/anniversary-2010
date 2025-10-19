@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dancing-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #ff6b9d 0%, #c44569 50%, #9b59b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes heart-beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  10%, 30% {
+    transform: scale(0.9);
+  }
+  20%, 40% {
+    transform: scale(1.1);
+  }
+}
+
+.heart-beat {
+  animation: heart-beat 2s ease-in-out infinite;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(100vh) scale(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+
+.float-up {
+  animation: float-up linear infinite;
+}
+
