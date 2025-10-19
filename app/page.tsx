@@ -13,16 +13,16 @@ export default function Home() {
   const maxClicks = 10;
 
   const messages = [
-    "Hãy lấp đầy trái tim bằng tình yêu nhé! 💝",
-    "Tuyệt vời! Tiếp tục nào! 🥰",
-    "Em đang làm rất tốt đấy! 💕",
+    "Click để bơm đầy tình yêu vào trái tim! 💝",
+    "Đã đã! Tiếp tục nha em! 🥰",
+    "Em đang làm đúng gòi! 💕",
     "Trái tim đang ấm lên rồi! 🌸",
-    "Còn một chút nữa thôi! 💗",
-    "Em thật tuyệt vời! 💖",
-    "Sắp đầy rồi, cố lên em! 🌹",
+    "Yêu emmmm! 💗",
+    "Cố lên, cố lên sắp tới gòi! 💖",
+    "Đã đã! 🌹",
     "Gần xong rồi! ✨",
-    "Chỉ còn một chút nữa! 💫",
-    "Đầy tràn yêu thương rồi! Mở thư thôi nào! 💌"
+    "Ấm áp quá! 💫",
+    "Tuyệt quá em ơi! 💌"
   ];
 
   useEffect(() => {
@@ -171,7 +171,7 @@ export default function Home() {
                   className="px-10 py-5 bg-gradient-to-r from-pink-500 via-rose-500 to-pink-600 text-white text-2xl font-semibold rounded-full shadow-2xl hover:shadow-pink-500/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                 >
                   {heartLevel < maxClicks ? (
-                    <>💕 Click để yêu thương</>
+                    <> Nút bơm 💕 nè</>
                   ) : (
                     <>💖 Đầy tràn yêu thương!</>
                   )}
